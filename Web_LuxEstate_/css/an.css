@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  z-index: 300;
+}
+
+.display .spinner-container {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.circles {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  animation: displayCircles 2s;
+}
+
+.container {
+  display: none;
+}
+
+.display .container {
+  display: block;
+}
